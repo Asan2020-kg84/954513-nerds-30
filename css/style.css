@@ -1,0 +1,220 @@
+@font-face {
+  font-family:"Roboto";
+  src: url("../fonts/roboto.woff") format("woff"),
+      url("../fonts/roboto.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+}
+@font-face {
+  font-family:"Roboto";
+  src: url("../fonts/robotobold.woff") format("woff"),
+      url("../fonts/robotobold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+}
+@font-face {
+  font-family:"Roboto";
+  src: url("../fonts/robotomedium.woff") format("woff"),
+      url("../fonts/robotomedium.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+}
+/*variables*/
+:root {
+  --text-black: #000000;
+  --text-small: #283136;
+  --basic-white: #ffffff;
+  --background-button-red: #fb565a;
+  --background-grey: #eeeeee;
+  --background-button-green: #00ca74;
+  --background-button-yellow: #EFC849;
+  --basic-dark-grey: #888888;
+  --icons-color: #a6a6a6;
+  --basic-green: #00ca74;
+  --basic-black: #231f20;
+  --text-footer: #444444;
+  --text-contacts: #666666;
+  --button-hover-red: #E74246;
+  --button-hover-green: #00BC6C;
+  --button-hover-yellov: #EAB534;
+  --button-focus-red: #D7373B;
+  --button-focus-green: #00AA62;
+  --button-focus-yellow: #E5A722;
+}
+/*Global*/
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-black);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+/*main-header*/
+.main-header {
+  
+}
+  
+/*main navigation*/
+.main-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+  
+.site-navigation {
+  list-style: none;
+}
+/* User navigation */
+.site-navigation a,
+.user-basket {
+  color: var(--text-black);
+}
+.site-navigation a:hover,
+.user-basket a:hover {
+  color: var(--background-button-red);
+ 
+}
+.site-navigation a:active,
+.user-basket a:active {
+  color: var(--text-black);
+  opacity: 30%;
+}
+
+
+/*Slider*/
+.slide-list{
+  list-style: none;
+  text-align: left;
+}
+.slide-text  {
+ font-size: 55px;
+ line-height: 55px;
+ font-weight: 500;
+}
+/*Button*/
+.button {
+  font: inherit;
+  color: var(--basic-white);
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--background-button-red);
+  border: none;
+}
+  
+.button:hover {
+  background-color: var(--button-hover-red);
+}
+.button:focus {
+  background-color: var(--button-focus-red);
+}
+  
+.button.button-order.green.button {
+  background-color: var(--background-button-green);
+}
+.button.button-order.green.button:hover {
+  background-color: var(--button-hover-green);
+}
+.button.button-order.green.button:focus {
+  background-color: var(--button-focus-green);
+}
+.button.button-order.yellow {
+  background-color: var(--background-button-yellow);
+}
+.button.button-order.yellow:hover {
+  background-color: var(--button-hover-yellov);
+}
+.button.button-order.yellow:focus {
+  background-color: var(--button-focus-yellow);
+}
+
+/*Service*/
+.service h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.service-list {
+  list-style: none;
+}
+.service-item {
+  text-align: center;
+}
+/*Features*/
+.features-text {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+}
+.features-page h3 {
+  font-weight: bold;
+}
+
+.order-list li{
+  list-style-type: none;
+}
+.order-list-item {
+  color: var(--background-button-red);
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+}
+/*features*/
+.features-content img {
+  width: 360;
+  height: 208;
+}
+.features-list {
+  list-style: none;
+}
+.features-item-text1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 65px;
+}
+.features-item-text2 {
+  line-height: 18px;
+}
+/*project*/
+.project-list {
+  list-style: none;
+}
+/*footer*/
+.footer {
+  font: inherit;
+  color: inherit;
+}
+.footer-contacts h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.footer-contacts adress {
+  line-height: 18px;
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+.footer-social h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+.footer-social p {
+  line-height: 22px;
+  color: #444444;
+}
