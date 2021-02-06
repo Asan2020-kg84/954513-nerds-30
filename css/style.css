@@ -61,7 +61,7 @@ a {
 }
 /*main-header*/
 .main-header {
-  
+  background-color: var(--background-grey);
 }
   
 /*main navigation*/
@@ -119,23 +119,30 @@ a {
   background-color: var(--button-focus-red);
 }
   
-.button.button-order.green.button {
+.button.button-order.button-green {
   background-color: var(--background-button-green);
 }
-.button.button-order.green.button:hover {
+.button.button-order.button-green:hover {
   background-color: var(--button-hover-green);
 }
-.button.button-order.green.button:focus {
+.button.button-order.button-green:focus {
   background-color: var(--button-focus-green);
 }
-.button.button-order.yellow {
+.button.button-order.button-yellow {
   background-color: var(--background-button-yellow);
 }
-.button.button-order.yellow:hover {
+.button.button-order.button-yellow:hover {
   background-color: var(--button-hover-yellov);
 }
-.button.button-order.yellow:focus {
+.button.button-order.button-yellow:focus {
   background-color: var(--button-focus-yellow);
+}
+/**/
+.carousel {
+  background-color: var(--background-grey);
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /*Service*/
@@ -163,11 +170,13 @@ a {
 .order-list li{
   list-style-type: none;
 }
-.order-list-item {
-  color: var(--background-button-red);
-  display: inline-block;
-  width: 15px;
-  height: 2px;
+.order-list-item::before {
+  margin-left: 10px;
+  color: #D7373B; /* цвет маркера */
+  content: "\2014"; /* Unicode символ - дефис */
+}
+  
+  
 }
 /*features*/
 .features-content img {
@@ -177,12 +186,12 @@ a {
 .features-list {
   list-style: none;
 }
-.features-item-text1 {
+.features-item-percent {
   font-weight: 700;
   font-size: 45px;
   line-height: 65px;
 }
-.features-item-text2 {
+.features-item-terms {
   line-height: 18px;
 }
 /*project*/
