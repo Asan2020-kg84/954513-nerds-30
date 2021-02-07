@@ -40,8 +40,11 @@
   --button-focus-red: #D7373B;
   --button-focus-green: #00AA62;
   --button-focus-yellow: #E5A722;
+  --checkbox: #4d4d4d;
+  --background-button-grey: #dfdfdf;
 }
 /*Global*/
+
 .page-body {
   min-width: 960px;
   margin: 0;
@@ -59,12 +62,15 @@ img {
 a {
   text-decoration: none;
 }
+
 /*main-header*/
+
 .main-header {
   background-color: var(--background-grey);
 }
   
 /*main navigation*/
+
 .main-navigation {
   font-weight: 500;
   font-size: 16px;
@@ -75,6 +81,7 @@ a {
   list-style: none;
 }
 /* User navigation */
+
 .site-navigation a,
 .user-basket {
   color: var(--text-black);
@@ -92,6 +99,7 @@ a {
 
 
 /*Slider*/
+
 .slide-list{
   list-style: none;
   text-align: left;
@@ -102,6 +110,7 @@ a {
  font-weight: 500;
 }
 /*Button*/
+
 .button {
   font: inherit;
   color: var(--basic-white);
@@ -119,25 +128,27 @@ a {
   background-color: var(--button-focus-red);
 }
   
-.button.button-order.button-green {
+.button.button-green {
   background-color: var(--background-button-green);
 }
-.button.button-order.button-green:hover {
+.button.button-green:hover {
   background-color: var(--button-hover-green);
 }
-.button.button-order.button-green:focus {
+.button.button-green:focus {
   background-color: var(--button-focus-green);
 }
-.button.button-order.button-yellow {
+.button.button-yellow {
   background-color: var(--background-button-yellow);
 }
-.button.button-order.button-yellow:hover {
+.button.button-yellow:hover {
   background-color: var(--button-hover-yellov);
 }
-.button.button-order.button-yellow:focus {
+.button.button-yellow:focus {
   background-color: var(--button-focus-yellow);
 }
-/**/
+
+/*slide*/
+
 .carousel {
   background-color: var(--background-grey);
   background-image: url("../img/nerds-index-slide1.png");
@@ -146,6 +157,7 @@ a {
 }
 
 /*Service*/
+
 .service h3 {
   font-size: 24px;
   line-height: 30px;
@@ -158,6 +170,7 @@ a {
   text-align: center;
 }
 /*Features*/
+
 .features-text {
   font-weight: bold;
   font-size: 45px;
@@ -177,8 +190,9 @@ a {
 }
   
   
-}
+
 /*features*/
+
 .features-content img {
   width: 360;
   height: 208;
@@ -194,11 +208,15 @@ a {
 .features-item-terms {
   line-height: 18px;
 }
+
 /*project*/
+
 .project-list {
   list-style: none;
 }
+
 /*footer*/
+
 .footer {
   font: inherit;
   color: inherit;
@@ -226,4 +244,112 @@ a {
 .footer-social p {
   line-height: 22px;
   color: #444444;
+}
+
+
+/*Catalog*/
+
+.page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+/*portfolio*/
+
+.filter legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.filter ul {
+  list-style: none;
+  line-height: 19px;
+}
+.filter-input-radio:hover,
+.filter-input-radio:focus {
+  color: var(--checkbox);
+  opacity: 40%;
+}
+.filter-input-checkbox:hover,
+.filter-input-checkbox:focus {
+  color: var(--checkbox);
+  opacity: 40%;
+}
+.filter-button {
+  font: inherit;
+  color: var(--text-black);
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--background-grey);
+  border: none;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--background-button-grey);
+}
+
+/*Sort*/
+
+.price h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.price-list {
+  list-style: none;
+}
+.price-list.price-item {
+  font-size: 14px;
+  line-height: 18px;
+}
+.price-list-button {
+  list-style: none;
+}
+.type-item {
+  color: var(--text-black);
+  opacity: 30%;
+}
+
+/*image*/
+
+.image-list {
+  list-style: none;
+}
+.img {
+  line-height: 1px; /* Межстрочное расстояние */
+  position: top;
+ }
+ .pattern-image h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+ }
+ .pattern-image p {
+  line-height: 18px;
+ }
+ 
+ /*pagination*/
+
+ .pagination-list {
+  list-style: none;
+ }
+ .pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--background-grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+ }
+ .pagination-item a:hover,
+ .pagination-item a:focus,
+ .pagination-item a:active {
+   background-color: var(--background-button-grey);
+ }
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
