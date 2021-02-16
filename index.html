@@ -15,25 +15,25 @@
 
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo/nerds-logo.png" width="160" height="65" alt="Логотип Интернет магазин «Nerds»">
-    </a>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#contacts_page">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="user-basket">
-      <img src="img/icons/basket-icon.png">
-      <a class="basket" href="blank.html">Корзина</a>
+    <div class="header-menu">
+      <a class="main-header-logo"><img src="img/logo/nerds-logo.png" width="160" height="65"
+          alt="Логотип Интернет магазин «Nerds»"></a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#contacts_page">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-basket">
+        <img src="img/icons/basket-icon.png">
+        <a class="basket" href="blank.html">Корзина</a>
+      </div>
     </div>
-
   </header>
   <main class="container">
-    <h1>Интернет магазин Nerds</h1>
+    <h1 class="visibility-hidden">Интернет магазин Nerds</h1>
     <section class="carousel">
       <h2>Слайды</h2>
       <ul class="slide-list">
@@ -80,7 +80,7 @@
       </ul>
     </section>
     <section class="service">
-      <h2>Услуги</h2>
+      <h2 class="visibility-hidden">Услуги</h2>
       <ul class="service-list">
         <li class="service-item">
           <img src="img/illustration-1.jpg" width="300" height="146" alt="webcite">
@@ -104,9 +104,10 @@
     </section>
     <section class="features">
       <div class="features-page">
-        <h2>Наши преимущества</h2>
+        <h2 class="features-header">Наши преимущества</h2>
         <p class="features-text">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+        <p class="features-text-slogan">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+          креатива. Работаем не
           покладая рук, как роботы.</p>
         <h3>Выполняем заказы на разработку:</h3>
         <ul class="order-list">
@@ -117,85 +118,97 @@
       </div>
       <div class="features-content">
         <img src="img/nerds-illustration1.jpg" width="360" height="208" alt="Иллюстрация Нердс">
-        <p>С 2004 года любим точность во всем:</p>
-        <ul class="features-list">
-          <li class="features-item">
-            <p class="features-item-percent">146%</p>
-            <p class="features-item-terms">Уровень самоотдачи</p>
-          </li>
-          <li class="features-item">
-            <p class="features-item-percent">100%</p>
-            <p class="features-item-terms">Соблюдение сроков</p>
-          </li>
-          <li class="features-item">
-            <p class="features-item-percent">50%</p>
-            <p class="features-item-terms">Минимальная предоплата</p>
-          </li>
-        </ul>
+        <p class="features-title">С 2004 года любим точность во всем:</p>
+        <table class="features-table">
+          <tr class="features-table-row">
+            <th>146<sup>%</sup></th>
+            <th>100<sup>%</sup></th>
+            <th>50<sup>%</sup></th>
+          </tr>
+          <tr class="features-table-row">
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </div>
       </div>
     </section>
     <section class="projects">
-      <h2>Наши проекты</h2>
+      <h2 class="visibility-hidden">Наши проекты</h2>
       <ul class="project-list">
         <li class="project-item">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo/academy.png" width="199" height="67" alt="logo academy">
+          <a class="project-item-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo/academy.png" alt="Academy" width="199" height="68">
           </a>
         </li>
         <li class="project-item">
-          <a href="#">
-            <img src="img/logo/borodinski.png" width="209" height="90" alt="logo borodinski">
+          <a class="project-item-logo" href="#">
+            <img src="img/logo/borodinski.png" alt="Borodinski" width="209" height="90">
           </a>
         </li>
         <li class="project-item">
-          <a href="#">
-            <img src="img/logo/pink.png" width="185" height="52" alt="logo pink">
+          <a class="project-item-logo" href="#">
+            <img src="img/logo/pink.png" alt="Pink" width="185" height="52">
           </a>
         </li>
         <li class="project-item">
-          <a href="#">
-            <img src="img/logo/mishka.png" width="173" height="84" alt="logo mishka">
+          <a class="project-item-logo" href="#">
+            <img src="img/logo/mishka.png" alt="Mishka" width="173" height="84">
           </a>
         </li>
       </ul>
     </section>
   </main>
   <footer class="footer">
-    <section class="contacts" id="contacts-page">
-      <h2>Как нас найти</h2>
-      <img src="img/map1.png" width="1440" height="416" alt="Карта">
-      <div class="footer-contacts">
-        <h3>Nerds design studio</h3>
-        <address> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
-          <span>Тел: <a href="tel:+78122757575">+7 (812) 275-75-75</a></span>
-        </address>
-        <a class="button button-write-us" href="blank.html">Напишите нам</a>
-      </div>
-    </section>
-    <section class="footer-social">
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-      <ul>
-        <li>
-          <a class="social-link" href="#">
-            <!--Вконтакте-->
-            <img src="img/icons/Shape VK.svg" width="81" height="81" alt="Мы в контакте">
-          </a>
-        </li>
-        <li>
-          <a class="social-link" href="#">
-            <!--Фейсбук-->
-            <img src="img/icons/Shape Facebook.svg" width="81" height="81" alt="Мы в Фейсбуке">
-          </a>
-        </li>
-        <li>
-          <a class="social-link" href="#">
-            <!--Инстаграм-->
-            <img src="img/icons/Shape insta.svg" width="81" height="81" alt="Мы в инстраграме">
-          </a>
-        </li>
-      </ul>
-    </section>
+    <div class="container">
+      <section class="contacts" id="contacts-page">
+        <h2 class="visibility-hidden">Как нас найти</h2>
+        <img src="img/map1.png" width="1440" height="416" alt="Карта">
+        <!--<div class="footer-contacts">
+          <h3>Nerds design studio</h3>
+          <address> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
+            <span>Тел: <a href="tel:+78122757575">+7 (812) 275-75-75</a></span>
+          </address>
+          <a class="button button-write-us" href="blank.html">Напишите нам</a>
+        </div>-->
+      </section>
+      <section class="footer-social">
+        <div class="footer-header">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+        <div class="social-header">
+          <ul>
+            <li>
+              <a class="social-link" href="#">
+                <svg width="27" height="16" viewBox="0 0 128 76">
+                  <path
+                    d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z"
+                    fill="#ffffff">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#">
+                <svg width="19" height="22" viewBox="0 0 10.15 21.74">
+                  <path
+                    d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
+                    fill="#ffffff">
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="#">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="#ffffff"/>
+                  </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </footer>
 </body>
 
