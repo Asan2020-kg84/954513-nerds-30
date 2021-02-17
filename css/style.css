@@ -90,10 +90,10 @@ a {
 }
 
 .site-navigation {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
   
 /* User navigation */
@@ -257,7 +257,7 @@ a {
   height: 208px;
 }
 .features-table {
-  margin-top: 35px;
+  margin-top: 32px;
 }
 .features-table-row th {
   font-weight: bold;
@@ -382,11 +382,32 @@ a {
 
 /*Catalog*/
 
-.page-title {
+.main-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+.main-container .portfolio {
+  display: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+}
+.filter-container {
+  outline: 5px solid rgb(251, 255, 0);
+  outline-offset: -5px;
+}
+.page-catalog .page-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  padding-top: 80px;
+  padding-bottom: 115px;
+  text-align: center;
   background-color: var(--background-grey);
+  outline: 5px solid rgba(17, 0, 255, 0.534);
+  outline-offset: -5px;
 }
 
 /*portfolio*/
@@ -425,11 +446,22 @@ a {
 }
 
 /*Sort*/
-
+.catalog-sort {
+  outline: 5px solid rgba(0, 255, 242, 0.7);
+  outline-offset: -5px;
+  margin-left: 140px;
+}
+.page-catalog .price {
+  outline: 5px solid rgba(47, 0, 255, 0.7);
+  outline-offset: -5px;
+}
 .price h2 {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 48px;
+  margin: 0;
+  padding: 0;
 }
 .price-list {
   list-style: none;
@@ -448,6 +480,10 @@ a {
 
 /*image*/
 
+.page-catalog .pattern-image {
+  outline: 5px solid rgb(111, 0, 255);
+  outline-offset: -5px;
+}
 .image-list {
   list-style: none;
 }
@@ -459,6 +495,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  display: none;
  }
  .pattern-image p {
   line-height: 18px;
