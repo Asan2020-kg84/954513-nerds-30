@@ -14,49 +14,49 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
-    <div class="main-wrapper container">
-      <nav class="main-navigation">
-        <a class="main-header-logo"><img src="img/logo/nerds-logo.png" width="160" height="65"
+  <header class="header">
+    <div class="header-container container">
+      <nav class="header-navigation">
+        <a class="header-logo"><img src="img/logo/nerds-logo.png" width="160" height="65"
             alt="Логотип Интернет магазин «Nerds»"></a>
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item"><a href="#">Студия</a></li>
-          <li class="main-navigation-item"><a href="blank.html">Клиенты</a></li>
-          <li class="main-navigation-item"><a href="catalog.html">Магазин</a></li>
-          <li class="main-navigation-item"><a href="#contacts">Контакты</a></li>
+        <ul class="header-navigation-list">
+          <li class="header-navigation-item header-navigation-item-active"><a href="#">Студия</a></li>
+          <li class="header-navigation-item"><a href="blank.html">Клиенты</a></li>
+          <li class="header-navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="header-navigation-item"><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <a class="basket" href="blank.html">Корзина</a>
     </div>
   </header>
-  <main>
+  <main class="main">
     <h1 class="visually-hidden">Интернет магазин Nerds</h1>
-    <section class="slider slider-background-image-1">
+    <section class="slider">
       <div class="container">
         <h2 class="visually-hidden">Слайды</h2>
         <ul class="slider-list">
-          <li class="slider-item slide slider-current">
-            <p class="slide-title">Долго, дорого, скрупулезно.</p>
+          <li class="slider-item slider-item-design">
+            <p class="slider-title">Долго, дорого, скрупулезно.</p>
             <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения</p>
-            <a class="button slide-button" href="#">Узнать больше</a>
+            <a class="button slider-button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item slide">
-            <p class="slide-title">Любим математику как никто другой.</p>
+          <li class="slider-item slider-item-mathematical">
+            <p class="slider-title">Любим математику как никто другой.</p>
             <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-            <a class="button slide-button" href="#">Узнать больше</a>
+            <a class="button slider-button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item slide">
-            <p class="slide-title">Только ночь,<br>только хардкор</p>
+          <li class="slider-item slider-item-hardcore slider-item-current">
+            <p class="slider-title">Только ночь,<br>только хардкор</p>
             <p> Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-            <a class="button slide-button" href="#">Узнать больше</a>
+            <a class="button slider-button" href="#">Узнать больше</a>
           </li>
         </ul>
-        <ul class="slider-controls">
+        <ul class="slider-controls-list">
           <li>
-            <button class="slider-dot slider-dot-current" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-dot" type="button" aria-label="Первый слайд"></button>
           </li>
           <li>
-            <button class="slider-dot" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-dot slider-dot-current" type="button" aria-label="Второй слайд"></button>
           </li>
           <li>
             <button class="slider-dot" type="button" aria-label="Третий слайд"></button>
@@ -89,12 +89,13 @@
         </ul>
       </div>
     </section>
-    <section>
-      <div class="features container">
-        <div class="features-description">
+    <section class="features">
+      <div class="features-container container">
+        <div class="features-favor">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="features-text-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p class="features-text-slogan">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="features-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="features-slogan">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
+            креатива. Работаем не покладая рук, как роботы.</p>
           <h3>Выполняем заказы на разработку:</h3>
           <ul class="features-list">
             <li>Веб-сайтов любой сложности</li>
@@ -106,12 +107,12 @@
           <img src="img/nerds-illustration1.jpg" width="360" height="208" alt="Иллюстрация Нердс">
           <p class="features-table-title">С 2004 года любим точность во всем:</p>
           <table class="features-table">
-            <tr class="features-table-row">
+            <tr>
               <th>146<sup>%</sup></th>
               <th>100<sup>%</sup></th>
               <th>50<sup>%</sup></th>
             </tr>
-            <tr class="features-table-row">
+            <tr>
               <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
@@ -125,22 +126,22 @@
         <h2 class="visually-hidden">Наши проекты</h2>
         <ul class="project-list">
           <li class="project-item">
-            <a class="project-item-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="project-logo" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo/academy.png" alt="Academy" width="199" height="68">
             </a>
           </li>
           <li class="project-item">
-            <a class="project-item-logo" href="#">
+            <a class="project-logo" href="#">
               <img src="img/logo/borodinski.png" alt="Borodinski" width="209" height="90">
             </a>
           </li>
           <li class="project-item">
-            <a class="project-item-logo" href="#">
+            <a class="project-logo" href="#">
               <img src="img/logo/pink.png" alt="Pink" width="185" height="52">
             </a>
           </li>
           <li class="project-item">
-            <a class="project-item-logo" href="#">
+            <a class="project-logo" href="#">
               <img src="img/logo/mishka.png" alt="Mishka" width="173" height="84">
             </a>
           </li>
@@ -149,32 +150,28 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="footer-address" id="contacts">
+    <section class="footer-contacts" id="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="address">
-        <div class="address-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6149620258052!2d30.322189091502228!3d59.93853106617855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614454242983!5m2!1sru!2sru"
-            width="100%" height="416px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="address-text">
-          <h3>Nerds design studio</h3>
-          <address> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
-            <span class="address-contact-phone">тел.<a class="tel" href="tel:+78122757575">+7 (812) 275-75-75</a></span>
-          </address>
-          <a class="button address-button" href="blank.html">Напишите нам</a>
-        </div>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6149620258052!2d30.322189091502228!3d59.93853106617855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614454242983!5m2!1sru!2sru"
+        width="100%" height="416px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="footer-contacts-address">
+        <h3>Nerds design studio</h3>
+        <address> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
+          <span class="footer-contacts-phone">тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></span>
+        </address>
+        <a class="button footer-contacts-button" href="blank.html">Напишите нам</a>
       </div>
     </section>
     <section class="footer-social">
-      <div class="social-contacts container">
-        <div class="social-title">
+      <div class="footer-social-container container">
+        <div class="footer-social-title">
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-        <ul class="social-list">
+        <ul class="footer-social-list">
           <li>
-            <a class="social-link" href="#">
+            <a class="footer-social-link" href="#">
               <svg width="27" height="16" viewBox="0 0 128 76">
                 <path
                   d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z"
@@ -183,7 +180,7 @@
             </a>
           </li>
           <li>
-            <a class="social-link" href="#">
+            <a class="footer-social-link" href="#">
               <svg width="19" height="22" viewBox="0 0 10.15 21.74">
                 <path
                   d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
@@ -192,7 +189,7 @@
             </a>
           </li>
           <li>
-            <a class="social-link" href="#">
+            <a class="footer-social-link" href="#">
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
