@@ -48,6 +48,7 @@
 .page {
   height: 100%;
 }
+
 .page-body {
   min-width: 1160px;
   margin: 0;
@@ -177,10 +178,12 @@ a {
   padding-top: 12px;
   max-width: 130px;
 }
+
 .basket {
   padding-left: 50px;
   position: relative;
 }
+
 .basket::before {
   content: "";
   position: absolute;
@@ -202,7 +205,7 @@ a {
 .header-navigation-list a:hover,
 .basket:hover {
   color: var(--background-button-red);
- }
+}
 
 .header-navigation-list a:active,
 .basket:active {
@@ -828,9 +831,11 @@ filter-radio:hover {
 .adaptive:hover::before {
   opacity: 2;
 }
+
 .fixed:hover::before {
   opacity: 2;
 }
+
 .rubber:hover::before {
   opacity: 2;
 }
@@ -965,9 +970,11 @@ input[type=checkbox]:checked + label::before {
 .catalog-type-button:hover {
     color: rgba(0,0,0,.6);
 }
+
 .catalog-type-button:active {
     color: #000;
 }
+
 .catalog-type-button-active {
   opacity: 1;
 }
@@ -979,9 +986,11 @@ input[type=checkbox]:checked + label::before {
   display: flex;
   justify-content: space-between;
 }
+
 .catalog-order-item {
   padding-left: 15px;
 }
+
 .catalog-order-button-down {
   color: var(--text-black);
   border:none;
