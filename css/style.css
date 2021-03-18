@@ -60,9 +60,9 @@
   color: var(--text-black);
   min-height: 100%;
   display: grid;
-  grid-template-rows: 
-  min-content 
-  1fr 
+  grid-template-rows:
+  min-content
+  1fr
   min-content;
   align-content: start;
 }
@@ -105,7 +105,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
 }
-  
+
 .button:hover {
   background-color: var(--button-hover-red);
 }
@@ -275,7 +275,7 @@ a {
 .slider-item-current {
   display: block;
   margin-right: 3px;
-  
+
 }
 
 
@@ -560,7 +560,7 @@ a {
 }
 
 /*footer*/
-  
+
 .footer {
   font: inherit;
   color: inherit;
@@ -593,7 +593,7 @@ a {
   background-image: url("../img/map-marker\ 1.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-} 
+}
 
 .footer-contacts-address {
   box-sizing: border-box;
@@ -677,7 +677,7 @@ a {
   color: #444444;
   margin-top: 10px;
   padding: 0;
-} 
+}
 
 .footer-social-list {
   display: flex;
@@ -703,7 +703,7 @@ a {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: #e74246; 
+  background-color: #e74246;
 }
 
 .footer-social-link:active {
@@ -794,7 +794,7 @@ a {
   width: 360px;
 }
 
-.modal-input, 
+.modal-input,
 .modal-comment {
   display: block;
   box-sizing: border-box;
@@ -814,7 +814,7 @@ a {
   margin-bottom: 35px;
 }
 
-.modal-input:focus, 
+.modal-input:focus,
 .modal-comment:focus {
   color: #000;
   border: 2px solid #000;
@@ -1022,9 +1022,11 @@ filter-radio:hover {
 .adaptive:hover::before {
   opacity: 2;
 }
+
 .fixed:hover::before {
   opacity: 2;
 }
+
 .rubber:hover::before {
   opacity: 2;
 }
@@ -1242,7 +1244,7 @@ input[type=checkbox]:checked + label::before {
   margin-right: 40px;
   margin-top: 63px;
   margin-bottom: 0px;
-  position: relative;  
+  position: relative;
 }
 
 .catalog-template-item img {
@@ -1364,7 +1366,7 @@ input[type=checkbox]:checked + label::before {
    padding-left: 78px;
    padding-right: 77px;
  }
- 
+
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
@@ -1382,7 +1384,7 @@ input[type=checkbox]:checked + label::before {
 
 /*Grid*/
 
- 
+
  /*.service-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
