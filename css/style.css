@@ -195,7 +195,7 @@ a {
   content: "";
   position: absolute;
   top: 25px;
-  left: 0px;
+  left: 0;
   width: 15px;
   height: 18px;
   background-image: url("../img/icons/basket-icon.png");
@@ -742,6 +742,10 @@ a {
   display: none;
 }
 
+.modal-active {
+  display: block;
+}
+
 .modal-close {
   position: absolute;
   top: 75px;
@@ -752,7 +756,7 @@ a {
   border: 0;
   cursor: pointer;
   background: none;
-  background-image: url("../img/icons/close-cross.png");
+  background-image: url("../img/close-cross.svg");
   opacity: 0.3;
 }
 
