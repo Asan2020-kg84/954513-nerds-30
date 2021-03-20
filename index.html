@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <link rel="icon" href="Vector_1.ico">
-  <link rel="icon" href="favicon/icon.svg" type="image/svg+×ml">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
@@ -73,19 +73,19 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="service-list">
           <li class="service-item">
-            <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+            <img src="img/illustration-one.jpg" width="300" height="146" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button button-order-red" href="#">Заказать</a>
           </li>
           <li class="service-item">
-            <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+            <img src="img/illustration-two.jpg" width="300" height="146" alt="Приложения">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений <br> в AppStore и Google Play</p>
             <a class="button button-order-green" href="#">Заказать</a>
           </li>
           <li class="service-item">
-            <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+            <img src="img/illustration-three.jpg" width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button button-order-yellow" href="#">Заказать</a>
@@ -108,7 +108,7 @@
           </ul>
         </div>
         <div class="features-statistics">
-          <img src="img/nerds-illustration1.jpg" width="360" height="208" alt="Иллюстрация Нердс">
+          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Иллюстрация Нердс">
           <p class="features-table-title">С 2004 года любим точность во всем:</p>
           <table class="features-table">
             <tr>
@@ -156,9 +156,8 @@
   <footer class="footer">
     <section class="footer-contacts" id="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6149620258052!2d30.322189091502228!3d59.93853106617855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614454242983!5m2!1sru!2sru"
-        width="100%" height="425" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="footer-contacts-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6149620258052!2d30.322189091502228!3d59.93853106617855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614454242983!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <div class="footer-contacts-address">
         <h3>Nerds design studio</h3>
         <address> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
@@ -197,7 +196,8 @@
           <li>
             <a class="footer-social-link" href="#">
               <span class="visually-hidden">Инстаграм</span>
-              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
                   fill="#ffffff" />
@@ -219,8 +219,10 @@
         <label class="modal-email" for="email">Ваш email:</label>
         <input class="modal-input" id="email" type="email" name="email" placeholder="email@example.com">
       </p>
-      <p>Текст письма<textarea class="modal-comment" name="comment" id="comment-field" rows="5"
-          placeholder="В свободной форме"></textarea></p>
+      <p>
+        <label>Текст письма<textarea class="modal-comment" name="comment" id="comment-field" rows="5"
+          placeholder="В свободной форме"></textarea></label>
+      </p>
       <button class="button modal-button-submit" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>

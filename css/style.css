@@ -19,7 +19,9 @@
       font-weight: 500;
       font-style: normal;
 }
+
 /*variables*/
+
 :root {
   --text-black: #000000;
   --text-small: #283136;
@@ -43,6 +45,7 @@
   --checkbox: #4d4d4d;
   --background-button-grey: #dfdfdf;
 }
+
 /*Global*/
 
 .page {
@@ -93,6 +96,7 @@ a {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 15px;
   padding: 15px 40px;
   font: inherit;
@@ -109,6 +113,7 @@ a {
 .button:hover {
   background-color: var(--button-hover-red);
 }
+
 .button:active {
   color: #e26f72;
   background-color: #D7373B;
@@ -203,11 +208,11 @@ a {
   background-position: 0 0;
 }
 
-
 .header-navigation-list a,
 .basket {
   color: var(--text-black);
   display: inline-block;
+  vertical-align: middle;
 }
 
 .header-navigation-list a:hover,
@@ -233,7 +238,6 @@ a {
 
 /*Slider*/
 
-
 .slider {
   position: relative;
   min-width: 1160px;
@@ -249,7 +253,7 @@ a {
 
 .slider-item-design {
   display: none;
-  background-image: url("../img/nerds-index-slide1.png");
+  background-image: url("../img/nerds-index-slide.png");
   background-color: var(--background-grey);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -258,7 +262,7 @@ a {
 
 .slider-item-mathematical {
   display: none;
-  background-image: url("../img/slider-2.jpg");
+  background-image: url("../img/slider-two.jpg");
   background-color: var(--background-grey);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -267,7 +271,7 @@ a {
 
 .slider-item-hardcore {
   display: none;
-  background-image: url("../img/slider-3.jpg");
+  background-image: url("../img/slider-three.jpg");
   background-color: var(--background-grey);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -279,7 +283,6 @@ a {
   margin-right: 3px;
   
 }
-
 
 .slider-title {
   width: 538px;
@@ -457,7 +460,6 @@ a {
   margin-top: 40px;
 }
 
-
 .features-list {
   list-style: none;
   padding: 0;
@@ -577,12 +579,17 @@ a {
   width: 100%;
   height: 425px;
   z-index: 20;
-  background: #fff url("../img/map-marker.jpg") center no-repeat;
+  background: #fff url("../img/map.png") center no-repeat;
   background-size: cover;
   top: 58px;
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.footer-contacts-map {
+  width: 100%;
+  height: 425px;
 }
 
 .footer-contacts::after {
@@ -592,7 +599,7 @@ a {
   left: 710px;
   width: 190px;
   height: 190px;
-  background-image: url("../img/map-marker\ 1.png");
+  background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 } 
@@ -605,7 +612,7 @@ a {
   display: block;
   background-color: #fff;
   width: 320px;
-  height: 310px;
+  min-height: 310px;
   z-index: 30;
   padding: 30px 50px;
 }
@@ -756,7 +763,7 @@ a {
   border: 0;
   cursor: pointer;
   background: none;
-  background-image: url("../img/close-cross.svg");
+  background-image: url("../img/icons/close-cross.svg");
   opacity: 0.3;
 }
 
@@ -820,6 +827,11 @@ a {
   margin-bottom: 35px;
 }
 
+.modal-input:hover, 
+.modal-comment:hover {
+  border: 2px solid #B4B9BB;
+}
+
 .modal-input:focus, 
 .modal-comment:focus {
   color: #000;
@@ -835,9 +847,6 @@ a {
 .modal-button-submit {
   padding: 15px 83px;
 }
-
-
-/*Catalog*/
 
 /*Catalog*/
 
@@ -873,11 +882,11 @@ a {
 }
 
 .filter-form fieldset:first-child {
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 }
 
 .filter-form fieldset:nth-child(2n) {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .filter-form fieldset:nth-child(3n) {
@@ -885,18 +894,17 @@ a {
 }
 
 .filter-form legend {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-
 /*range*/
 
 .filter-range-wrapper {
-  margin-top: 35px;
+  margin-top: 36px;
   width: 260px;
 }
 
@@ -919,7 +927,6 @@ a {
   margin-left: 8%;
   background-color: #00ca74;
 }
-
 
 .filter-range-toggle {
   position: absolute;
@@ -992,46 +999,48 @@ a {
   user-select: none;
 }
 
-.filter-radio:hover,
-.filter-radio:focus {
-  color: var(--checkbox);
-  opacity: 40%;
-}
-
 .filter-radio + label::before {
-  content: "";
   position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: 0px;
   left: -36px;
-  top: 1px;
-  width: 16px;
-  height: 16px;
-  border: 4px solid #4d4d4d;
-  opacity: 0.4;
-  border-radius: 50%;
+  background-image: url("../img/icons/radio-off.png");
+  opacity: .4;
 }
 
-.filter-radio:checked + label::after {
+input[type=radio]:checked + label::before {
   content: "";
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  left: -36px;
   position: absolute;
-  top: 9px;
-  left: -28px;
-  width: 8px;
-  height: 8px;
-  background-color: #4d4d4d;
-  opacity: 0.4;
-  border-radius: 50%;
-}
-filter-radio:hover {
-  color: red;
+  background-image: url("../img/icons/radio-on.png");
 }
 
-.adaptive:hover::before {
+.filter-radio:hover + .adaptive::before {
   opacity: 2;
 }
-.fixed:hover::before {
+
+.filter-radio:focus + .adaptive::before {
   opacity: 2;
 }
-.rubber:hover::before {
+
+.filter-radio:hover + .fixed::before {
+  opacity: 2;
+}
+
+.filter-radio:focus + .fixed::before {
+  opacity: 2;
+}
+
+.filter-radio:hover + .rubber::before {
+  opacity: 2;
+}
+
+.filter-radio:focus + .rubber::before {
   opacity: 2;
 }
 
@@ -1057,7 +1066,7 @@ filter-radio:hover {
   content: "";
   width: 23px;
   height: 23px;
-  top: 0;
+  top: -2px;
   left: 0;
   background-image: url("../img/icons/checkbox-off.svg");
   opacity: 0.4;
@@ -1067,13 +1076,17 @@ input[type=checkbox]:checked + label::before {
   content: "";
   width: 25px;
   height: 23px;
-  top: 0;
+  top: -2px;
   left: 0;
   position: absolute;
   background-image: url("../img/icons/checkbox-on.svg");
 }
 
-.filter-label-check:hover::before {
+.filter-check:hover + .filter-label-check::before {
+  opacity: 2;
+}
+
+.filter-check:focus + .filter-label-check::before {
   opacity: 2;
 }
 
@@ -1094,6 +1107,7 @@ input[type=checkbox]:checked + label::before {
   border: none;
   border-radius: 3px;
   text-align: center;
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -1102,6 +1116,10 @@ input[type=checkbox]:checked + label::before {
 
 .filter-button:active {
   background-color: #D5D5D5;
+}
+
+.filter-form .qualities {
+  margin-bottom: 15px;
 }
 
 /*Sort*/
@@ -1150,13 +1168,14 @@ input[type=checkbox]:checked + label::before {
   font-size: 14px;
   line-height: 18px;
 }
+
 .catalog-type-item:first-child {
   padding-right: 27px;
 }
+
 .catalog-type-item:nth-child(2) {
   padding-right: 26px;
 }
-
 
 .catalog-type-button {
   color: var(--text-black);
@@ -1256,6 +1275,7 @@ input[type=checkbox]:checked + label::before {
   width: 358px;
   border-radius: 0 0 5px 5px;
 }
+
 .catalog-template-item:nth-child(2n) {
   margin-right: 0;
 }
@@ -1315,18 +1335,29 @@ input[type=checkbox]:checked + label::before {
 .catalog-title-hover h3 {
   margin-top: 0px;
   text-transform: uppercase;
- }
+  cursor: pointer;
+}
+
+.catalog-title-hover h3:hover {
+  color: #FB565A;
+}
+
+.catalog-title-hover h3:active {
+  color: #000000;
+  opacity: .3;
+}
 
 .catalog-title-hover p {
   line-height: 18px;
   width: 200px;
   color: #666666;
   margin: 15px auto 18px;
+  cursor: default;
 }
 
 .button-hover {
   padding: 12px 78px;
- }
+}
 
 .rub::before {
   content: "\20BD";
@@ -1334,7 +1365,7 @@ input[type=checkbox]:checked + label::before {
 
  /*pagination*/
 
- .pagination {
+.pagination {
   padding: 0;
   margin: 0;
   margin-top: 49px;
@@ -1347,35 +1378,37 @@ input[type=checkbox]:checked + label::before {
   padding: 0;
   margin: 0;
   margin-bottom: 0px;
- }
+}
 
 .pagination-item a {
   display: block;
-  padding: 15px 18px;
+  padding: 13px 17px 13px 18px;
   color: var(--basic-black);
   background-color: var(--background-grey);
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  border: 2px solid var(--background-grey);
+  border: 3px solid var(--background-grey);
   border-radius: 3px;
- }
+}
 
 .pagination-item {
   margin-right: 11px;
- }
+}
 
 .pagination-item .pagination-link {
-   padding-left: 78px;
-   padding-right: 77px;
- }
+   padding-left: 76px;
+   padding-right: 75px;
+   padding-top: 13px;
+   padding-bottom: 12px;
+}
  
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
    background-color: var(--background-button-grey);
- }
+}
 
 .pagination-item-current a,
 .pagination-item-current a:hover,
@@ -1384,6 +1417,7 @@ input[type=checkbox]:checked + label::before {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
 
 
 /*Grid*/
