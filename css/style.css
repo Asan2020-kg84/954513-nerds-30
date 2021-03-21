@@ -248,8 +248,7 @@ a {
 }
 
 .slider-item-design {
-  display: none;
-  background-image: url("../img/slider-one.jpg");
+  background-image: url("../img/slide-one.png");
   background-color: var(--background-grey);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -1054,7 +1053,7 @@ input[type=radio]:checked + label::before {
   height: 23px;
   top: -2px;
   left: 0;
-  background-image: url("../img/icons/checkboxing-off.svg");
+  background-image: url("../img/icons/checkbox-off.svg");
   opacity: 0.4;
 }
 
@@ -1065,7 +1064,7 @@ input[type=checkbox]:checked + label::before {
   top: -2px;
   left: 0;
   position: absolute;
-  background-image: url("../img/icons/checkboxing-on.svg");
+  background-image: url("../img/icons/checkbox-off.svg");
 }
 
 .filter-check:hover + .filter-label-check::before {
