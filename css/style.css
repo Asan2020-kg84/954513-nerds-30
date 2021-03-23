@@ -53,7 +53,7 @@
 }
 
 .page-body {
-  min-width: 1160px;
+  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -162,15 +162,19 @@ a {
   padding: 0;
   margin-top: 20px;
   width: 550px;
-  margin-left: 200px;
+  margin-left: 202px;
 }
 
 .header-navigation-item {
   display: block;
-  margin-right: 46px;
+  margin-right: 45px;
   padding: 0;
   padding-bottom: 10px;
   position: relative;
+}
+
+.header-navigation-item:nth-child(3) {
+  margin-right: 46px;
 }
 
 .header-navigation-item:last-child {
@@ -236,8 +240,8 @@ a {
 
 .slider {
   position: relative;
-  min-width: 1160px;
-  height: 431px;
+  min-width: 1157px;
+  min-height: 428px;
   background-color: var(--background-grey);
 }
 
@@ -285,30 +289,31 @@ a {
   margin-bottom: 25px;
   padding-top: 71px;
   font-size: 55px;
-  line-height: 55px;
+  line-height: 56px;
   font-weight: 500;
   text-align: left;
 }
 
 .slider-slogan {
-  padding-top: 3px;
+  padding-top: 0;
 }
 
 .slider-button {
-  padding-top: 12px;
-  padding-right: 56px;
-  padding-left: 55px;
-  padding-bottom: 12px;
-  margin-top: 25px;
-  border-radius: 3px;
+  padding: 0;
+  margin-top: 38px;
+  text-align: center;
+  width: 240px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
   text-align: center;
 }
 
 .slider-controls-list {
   list-style: none;
   position: absolute;
-  bottom: 80px;
-  left: 675px;
+  bottom: 77px;
+  left: 635px;
   z-index: 20;
   display: flex;
   width: 89px;
@@ -343,7 +348,7 @@ a {
 /*Service*/
 
 .service {
-  margin-top: 73px;
+  margin-top: 76px;
   padding-bottom: 80px;
 }
 
@@ -496,6 +501,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 36px;
+  padding-left: 2px;
 }
 
 .features-table {
@@ -506,14 +512,24 @@ a {
   font-weight: bold;
   font-size: 45px;
   line-height: 10px;
+  padding: 0;
   padding-top: 10px;
   padding-bottom: 30px;
-  padding-right: 15px;
+  padding-right: 19px;
   text-align: left;
 }
 
-.features-table sub {
-  font-size: 28px;
+.features-table sup {
+  font-size: 27px;
+}
+
+.features-table td {
+  padding: 0;
+  padding-top: 6px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 /*project*/
@@ -524,26 +540,66 @@ a {
 }
 
 .project-list {
+  position: relative;
   display: flex;
+  width: 1160px;
   flex-wrap: wrap;
+  padding: 0;
+  padding-bottom: 38px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
-  padding: 25px 30px 48px 30px;
   border-bottom: 2px solid #eee;
-  margin-bottom: 20px;
 }
 
-.project-item {
-  border-right: 2px solid #eee;
-  height: 48px;
-  padding-right: 48px;
-  padding-top: 10px;
-  padding-bottom: 35px;
+.project-item:first-child {
+  padding-left: 32px;
+  padding-top: 47px;
 }
 
-.project-item:last-child {
-  border-style: none;
+.project-item:first-child::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 52px;
+  top: 50px;
+  left: 278px;
+  background-image: url("../img/icons/projeck-border.png");
+}
+
+.project-item:nth-child(2) {
+ padding-top: 30px;
+ padding-right: 10px;
+}
+
+.project-item:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 52px;
+  top: 50px;
+  left: 578px;
+  background-image: url("../img/icons/projeck-border.png")
+}
+
+.project-item:nth-child(3) {
+  padding-top: 50px;
+  padding-right: 25px;
+}
+
+.project-item:nth-child(3)::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 52px;
+  top: 50px;
+  left: 878px;
+  background-image: url("../img/icons/projeck-border.png")
+}
+
+.project-item:nth-child(4) {
+  padding-top: 36px;
+  padding-right: 45px;
 }
 
 .project-logo {
@@ -558,6 +614,7 @@ a {
   opacity: 0.1;
 }
 
+
 /*footer*/
   
 .footer {
@@ -569,10 +626,14 @@ a {
 
 .footer-contacts {
   position: relative;
-  padding: 56px 0 65px 179px;
+  padding: 56px 0 65px 140px;
   background: #fff url("../img/map.png") center no-repeat;
   background-size: cover;
-  margin-top: 58px;
+  margin-top: 66px;
+}
+
+.wrapper {
+  margin-top: 62px;
 }
 
 .footer-iframe {
@@ -604,10 +665,11 @@ a {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   background-color: #fff;
   width: 320px;
-  padding: 30px 50px;
-  padding-bottom: 45px;
+  padding: 28px 50px;
+  padding-bottom: 47px;
   z-index: 1;
 }
 
@@ -641,10 +703,13 @@ a {
 .footer-contacts-button {
   padding: 0;
   margin: 0;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding: 0;
+  margin: 0;
+  width: 219px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
 }
 
 /*footer-social*/
@@ -654,7 +719,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 35px;
+  margin-top: 33px;
   margin-bottom: 50px;
 }
 
@@ -718,8 +783,7 @@ a {
   opacity: 30%;
 }
 
-
-/*Moda;*/
+/*Modal*/
 
 .modal {
   position: fixed;
@@ -795,6 +859,7 @@ a {
   display: block;
   width: 360px;
 }
+
 .modal-email {
   display: block;
   width: 360px;
@@ -887,7 +952,7 @@ a {
 }
 
 .filter-form legend {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -897,7 +962,7 @@ a {
 /*range*/
 
 .filter-range-wrapper {
-  margin-top: 36px;
+  margin-top: 34px;
   width: 260px;
 }
 
@@ -982,7 +1047,7 @@ a {
 
 .filter-grid-item {
   margin-bottom: 16px;
-  padding-left: 37px;
+  padding-left: 36px;
 }
 
 .filter-grid-item label {
@@ -1047,7 +1112,7 @@ input[type=radio]:checked + label::before {
   cursor: pointer;
   color: #283136;
   padding-bottom: 20px;
-  padding-left: 37px;
+  padding-left: 36px;
 }
 
 .filter-label:last-child {
@@ -1112,7 +1177,7 @@ input[type=checkbox]:checked + label::before {
 }
 
 .filter-form .qualities {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 /*Sort*/
@@ -1264,7 +1329,7 @@ input[type=checkbox]:checked + label::before {
 }
 
 .catalog-template-item img {
-  border: 1px solid  #eee;
+  border: 1px solid #c4c4c4;
   width: 358px;
   border-radius: 0 0 5px 5px;
 }
